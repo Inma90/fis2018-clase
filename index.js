@@ -4,6 +4,8 @@ var express = require("express");
  var cors = require("cors");
  var path = require('path') 
  const CONTACTS_APP_DIR = "/dist/contacts-app"; 
+ var chai = require('chai');
+ var expect = chai.expect;
  
  var PORT = (process.env.PORT || 3000);
  var BASE_API_PATH = "/api/v1";
