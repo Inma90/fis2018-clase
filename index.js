@@ -5,7 +5,7 @@ var express = require("express");
  var path = require('path') 
  const CONTACTS_APP_DIR = "/dist/contacts-app"; 
  
- var PORT = 3000;
+ var PORT = (process.env.PORT || 3000);
  var BASE_API_PATH = "/api/v1";
  var dbFileName = __dirname + "/contacts.json";
 
